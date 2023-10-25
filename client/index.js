@@ -6,7 +6,7 @@ const serverUrl = "http://localhost:1225";
 
 async function main() {
   const merkleTree = new MerkleTree(niceList);
-  const name = "Norman Blocke";
+  const name = "Mrs. Shelia Welch";
   const index = niceList.findIndex((n) => n === name);
   const proof = merkleTree.getProof(index);
   await axios
